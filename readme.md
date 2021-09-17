@@ -1,0 +1,1 @@
+github는 corgi.jacob@gmail.com 연동
