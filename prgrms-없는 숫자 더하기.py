@@ -8,10 +8,10 @@ def solution(numbers):
             res += numbers[i]
     if res > 0:
         answer = 45-res
-    return answer
+    return answer, res
 
 
 
-numbers = [5,8,4,0,6,7,9]
+numbers = [1,2,3,4,6,7,8,0]
 
 print(solution(numbers))
