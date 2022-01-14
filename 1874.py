@@ -1,6 +1,6 @@
 import sys
 sys.stdin = open('1874.txt', 'r')
-N = int(sys.stdin.readline())
+N = int(input())
 arr = list(int(input()) for _ in range(N))
 rev = list(reversed(arr))
 # print(arr)
@@ -29,8 +29,11 @@ for i in range(1, len(num_list) + 1):
 while stack:
     temp.append((stack.pop()))
     answer.append('-')
-if temp != arr:
+if len(arr) == 1:
+    print("+")
+elif temp != arr:
     print('NO')
+
 else:
     for _ in range(len(answer)):
         print(answer[_])
