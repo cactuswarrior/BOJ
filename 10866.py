@@ -3,17 +3,14 @@ sys.stdin = open('10866.txt', 'r')
 from collections import deque
 N = int(input())
 arr = []
-for _ in range(N):
-    arr.extend(input().split())
 queue = deque()
-for i in range(len(arr)):
-    k = arr[i]
-    if ord(arr[i][0]) >= 48 and ord(arr[i][0]) <= 57:
-        continue
-    elif k == "push_back":
-        queue.append(int(arr[i+1]))
+for i in range(N):
+    arr = input().split()
+    k = arr[0]
+    if k == "push_back":
+        queue.append(int(arr[1]))
     elif k == "push_front":
-        queue.appendleft(int(arr[i+1]))
+        queue.appendleft(int(arr[1]))
     elif k == 'pop_front':
         if len(queue):
             q = queue.popleft()
@@ -43,4 +40,3 @@ for i in range(len(arr)):
             print(queue[-1])
         else:
             print(-1)
-    # print('queue', queue)
