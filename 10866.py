@@ -39,4 +39,4 @@ for i in range(N):
         else:
             print(-1)
 
-# 시간 단축 참조: https://yongku.tistory.com/entry/%EB%B0%B1%EC%A4%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B0%B1%EC%A4%80-10866%EB%B2%88-%EB%8D%B1-%ED%8C%8C%EC%9D%B4%EC%8D%ACPython
+# 시간 단축 1참조: https://yongku.tistory.com/entry/%EB%B0%B1%EC%A4%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B0%B1%EC%A4%80-10866%EB%B2%88-%EB%8D%B1-%ED%8C%8C%EC%9D%B4%EC%8D%ACPython
