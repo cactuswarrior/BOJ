@@ -16,7 +16,7 @@ for i in range(N):
         arr = []
     # print(func)
     # print(leng)
-    # print('arr', arr)
+    print('arr', arr)
 
     cnt = 0
     err = False
