@@ -17,6 +17,7 @@ for i in range(M):
 print(graph)
 
 def dfs(V, graph):
+    # 재귀를 이용해서 풀면 작은 숫자를 먼저 뽑는 로직 필요 없어진다
     arr = []
     print(V)
     print('visited', visited)

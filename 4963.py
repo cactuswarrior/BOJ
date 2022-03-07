@@ -1,13 +1,13 @@
 import sys
 sys.stdin = open('4963.txt', 'r')
 from collections import deque
-
+# 가로, 세로 잘 보기, dr, dc 잘 주기
 while True:
-    r, c = map(int, input().split())
-    if (r, c) == (0, 0):
+    c, r = map(int, input().split())
+    if (c, r) == (0, 0):
         break
     graph = []
-    for i in range(c):
+    for i in range(r):
         arr = list(map(int, input().split()))
         graph.append(arr)
     print(graph)
@@ -25,9 +25,9 @@ while True:
             a, b = queue.popleft()
             for i in range(8):
                 nr = a + dr[i]
-                nc = b + dr[i]
+                nc = b + dc[i]
 
-                if 0 <= nr < r-1 and 0 <= nc < c-1 and graph[nr][nc] == 1:
+                if 0 <= nr < r and 0 <= nc < c and graph[nr][nc] == 1:
                     queue.append((nr, nc))
                     print('i', nr, nc)
                     graph[nr][nc] = 0
