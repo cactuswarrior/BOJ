@@ -40,6 +40,7 @@ def bfs(r, c):
         cnt = temp
 
 # 그래프 전체 순회함
+for i in range(1, N+1):
     for j in range(1, M+1):
         if graph[i][j] == 1:
             bfs(i, j)
