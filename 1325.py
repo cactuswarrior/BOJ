@@ -5,22 +5,22 @@ sys.stdin = open("1325.txt", "r")
 N, M = map(int, input().split())
 # print(N, M)
 
-graph = [[0]*(N+1) for _ in range(N+1)]
+graph = [[] for _ in range(N+1)]
 # print(graph)
 
 for i in range(M):
     a, b = map(int, input().split())
-    # print(a, b)
-    graph[b][a] = 1
+
+    graph[b].append(a)
+print(graph)
 
 # print(graph)
 cnt = 0
 def dfs(a, graph):
     global cnt
     cnt += 1
-    for i in range(N):
-        if graph[a][i] == 1:
-            dfs(i, graph)
+    for i in range(len(graph[a])):
+        dfs(i, graph)
 
 
 # 한번 거친 곳은 안거치게 해야 할듯
