@@ -19,12 +19,12 @@ def bt(num, i):
     else:
         bt(num, i + 1)
 
-while num < 1000001:
+while num <= 9876543210:
     num += 1
     # print(num)
     bt(num, 0)
     if cnt == N:
         print(num)
         break
-    if num == 1000000:
-        print(-1)
+    # if num = 1000000:
+    #     print(-1)1
